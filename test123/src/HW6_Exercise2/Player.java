@@ -19,7 +19,8 @@ public class Player {
 		int x = bmg.play();
 		if(trys <= 5) {
 			this.card = x;
-			System.out.println("Sie haben schon alle Versuche aufgebraucht.");
+		}else {	
+			System.out.println("Sie haben schon alle Versuche aufgebraucht.");			
 		}
 		this.trys++;
 		return x;

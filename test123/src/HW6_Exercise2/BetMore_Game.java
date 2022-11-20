@@ -14,7 +14,6 @@ public class BetMore_Game {
 			System.out.println("Herzlichen Glückwunsch, Sie haben gewonnen!");
 			return player;
 		}else {
-			System.out.println(system.getCard() +"  "+  player.getCard());
 			System.out.println("Schade, Sie haben leider verloren, vielleicht bei einem anderen Versuch.");
 			return system;
 		}

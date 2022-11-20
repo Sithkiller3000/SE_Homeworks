@@ -8,6 +8,7 @@ public class Game_Chair {
 		system.Play();
 		Player player2 = new Player();
 		player2.Play();
+		//assuming the winning instance is needed for further code.
 		Player winner = system.getBetMore_Game().findWinner(system, player2);
 		
 	}
