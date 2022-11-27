@@ -60,13 +60,15 @@ public class CompositeTeam implements Team{
 					break;
 				}
 			}
-			for(Team t : subteams) {	
+			for(Team t : subteams) {
+				if(this instanceof CompositeTeam) {
 					if(t instanceof CompositeTeam) {
 						System.out.println();
 						System.out.print("-" + this.name);
-					}									
+					}
+				}
 				t.nameAndGoldMedals();
-			}
+			}			
 	}
 
 }
